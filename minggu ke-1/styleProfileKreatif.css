@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --bg: #09122c;
+  --second: #872341;
+  --third: #be3144;
+  --fourth: #e17564;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  background-color: var(--second);
+  padding: 30px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+main:hover {
+  box-shadow: 0 10px 20px var(--fourth);
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 {
+  position: absolute;
+  rotate: -10deg;
+  width: 270px;
+  height: 270px;
+  background-color: var(--fourth);
+  border-radius: 33px;
+}
+
+.box2 {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  background-image: url(img/profile.png);
+  background-size: cover;
+  border-radius: 33px;
+}
+
+.picture {
+  padding-right: 10%;
+  transition: transform 0.3s;
+}
+
+.picture:hover {
+  transform: scale(1.05);
+}
+
+.tittle {
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin: 0;
+  width: fit-content;
+  transition: color 0.3s;
+}
+
+.tittle:hover {
+  color: var(--bg);
+  cursor: default;
+}
+
+.text {
+  font-family: "Arimo", sans-serif;
+  text-align: justify;
+  max-width: 500px;
+  cursor: default;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+footer p {
+  margin-top: 20px;
+  text-align: center;
+}

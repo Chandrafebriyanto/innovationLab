@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #f2f5f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09122c;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-profile {
+  background: #ffffff;
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 24px 20px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-image: url('img/profile.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: -70px auto 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1f1f1f;
+  margin-top: 12px;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #2065d1;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #444;
+  padding: 0 10px;
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
