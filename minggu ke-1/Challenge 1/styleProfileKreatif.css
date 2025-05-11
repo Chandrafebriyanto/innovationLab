@@ -105,7 +105,7 @@ main:hover {
   position: relative;
   width: 270px;
   height: 270px;
-  background-image: url(img/profile.png);
+  background-image: url(../img/profile.png);
   background-size: cover;
   border-radius: 33px;
 }
