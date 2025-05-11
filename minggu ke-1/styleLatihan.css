@@ -1,24 +1,25 @@
 body {
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-        color: #333;
-      }
-      header, footer {
-        background-color: #4CAF50;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-      }
-      main {
-        padding: 20px;
-      }
-      img {
-        max-width: 50%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-      }
-      p {
-        text-align: center;
-        font-size: 1.2em;
-      }
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+header,
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+main {
+  padding: 20px;
+}
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+p {
+  text-align: center;
+  font-size: 1.2em;
+}
