@@ -16,7 +16,7 @@
   >
     <main class="card p-4 shadow-sm" style="width: 100%; max-width: 400px">
       <h1 class="text-center mb-4">Login</h1>
-      <form action="landing.html" method="GET">
+      <form action="landing.html" method="GET" onsubmit="return validateForm()">
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" required />
@@ -25,11 +25,25 @@
           <label for="password" class="form-label">Password</label>
           <input type="password" class="form-control" id="password" required />
         </div>
-        <button type="submit" class="btn btn-primary w-100">Masuk</button>
+        <button type="submit" class="btn btn-primary w-100" id="btn">Masuk</button>
       </form>
       <p class="text-center mt-3 small">
         Belum punya akun? <a href="#">Daftar di sini</a>
       </p>
     </main>
+
+    <script>
+      function validateForm() {
+        const email = document.getElementById("email").value;
+        if (!email.includes("@")) {
+          alert("Email tidak valid!");
+          return false;
+        }
+        return true;
+      }
+
+      document.getElementById('btn').addEventListener('click', () => { alert('Tombol ditekan!'); }); 
+
+    </script>
   </body>
 </html>
